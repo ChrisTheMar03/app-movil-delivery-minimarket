@@ -4,7 +4,7 @@ Aplicacion movil de delivery basica, utilizando arquitectura MVVM
 <h1>Aplicacion movil de delivery</h1>
 
 <h2>Login</h2>
-<img src="https://i.postimg.cc/qRJM3czR/login.jpg" alt="login" />
+<img src="https://i.postimg.cc/qRJM3czR/login.jpg" width="50px" alt="login" />
 
 <h2>Principal</h2>
 <img src="https://i.postimg.cc/nrKyYggf/principal.jpg" alt="principal" />

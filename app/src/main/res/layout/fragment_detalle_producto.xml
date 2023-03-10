@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragments.DetalleProductoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/gen_cons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:text="¡ Producto de Calidad !"
+                android:textAllCaps="true"
+                android:textColor="@color/opcional"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                android:contentDescription="@string/app_name" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/img_detalle"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frame"
+            app:layout_constraintBottom_toTopOf="@id/mat"
+            />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/img_detalle"
+            app:layout_constraintBottom_toBottomOf="@id/gen_cons"
+            android:layout_marginBottom="16dp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/det_nombre"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Nombre del producto a comprar"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@id/cons"
+                    app:layout_constraintTop_toTopOf="@id/cons" />
+
+                <TextView
+                    android:id="@+id/det_precio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S/. 99.99"
+                    android:textColor="@color/tercero"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/cons"
+                    app:layout_constraintTop_toTopOf="@id/cons" />
+
+                <LinearLayout
+                    android:id="@+id/cat_mar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/det_nombre">
+
+                    <LinearLayout
+                        android:id="@+id/cat_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:text="Categoria"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/det_cat"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nombre categoria" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mar_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:text="Marca"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/det_marca"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nombre Marca" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/funCantidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="end|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    app:layout_constraintEnd_toEndOf="@id/cons"
+                    app:layout_constraintTop_toBottomOf="@id/cat_mar">
+
+
+                    <ImageButton
+                        android:id="@+id/btnNeg"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_baseline_remove_24" />
+
+                    <TextView
+                        android:id="@+id/detail_cantidad"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:fontFamily="sans-serif-black"
+                        android:text="1"
+                        android:textAlignment="center" />
+
+                    <ImageButton
+                        android:id="@+id/btnPos"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnagregarped"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar"
+                    app:layout_constraintTop_toBottomOf="@id/funCantidad"
+                    app:cornerRadius="15dp"
+                    android:textSize="12sp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@id/cons"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:indeterminateTint="@color/tercero"
+            />
+        <!--        android:progressDrawable="@drawable/progreso_bar"-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--  Agregar Cantidad  -->
+
+
+</androidx.core.widget.NestedScrollView>

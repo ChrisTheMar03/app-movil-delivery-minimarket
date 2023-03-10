@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="Productos"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.christhemar.minigonza_app.ui.HomeFragments.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_detalleProductoFragment"
+            app:destination="@id/nav_detalle_producto" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_products_cat"
+            app:destination="@id/nav_products_cat" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_detalle_producto"
+        android:name="com.christhemar.minigonza_app.ui.HomeFragments.DetalleProductoFragment"
+        android:label="@string/productos"
+        tools:layout="@layout/fragment_detalle_producto" />
+    <fragment
+        android:id="@+id/nav_products_cat"
+        android:name="com.christhemar.minigonza_app.ui.HomeFragments.ProductsCatFragment"
+        android:label="@string/nav_title_prodcat"
+        tools:layout="@layout/fragment_products_cat" >
+        <action
+            android:id="@+id/action_nav_products_cat_to_nav_detalle_producto"
+            app:destination="@id/nav_detalle_producto" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pedido"
+        android:name="com.christhemar.minigonza_app.ui.PedidoFragments.PedidoFragment"
+        android:label="@string/pedido"
+        tools:layout="@layout/fragment_pedido" >
+        <action
+            android:id="@+id/action_nav_pedido_to_pagoFragment"
+            app:destination="@id/pagoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/envioFragment"
+        android:name="com.christhemar.minigonza_app.ui.PedidoFragments.EnvioFragment"
+        android:label="@string/envio_fragment"
+        tools:layout="@layout/fragment_envio" >
+        <action
+            android:id="@+id/action_envioFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapaFragment"
+        android:name="com.christhemar.minigonza_app.ui.PedidoFragments.MapaFragment"
+        android:label="@string/mapa"
+        tools:layout="@layout/fragment_mapa" />
+    <fragment
+        android:id="@+id/pagoFragment"
+        android:name="com.christhemar.minigonza_app.ui.PedidoFragments.PagoFragment"
+        android:label="@string/compra"
+        tools:layout="@layout/fragment_pago" >
+        <action
+            android:id="@+id/action_pagoFragment_to_envioFragment"
+            app:destination="@id/envioFragment" />
+        <action
+            android:id="@+id/action_pagoFragment_to_ventaFragment"
+            app:destination="@id/ventaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_historial"
+        android:name="com.christhemar.minigonza_app.ui.PedidoFragments.HistorialPedidoFragment"
+        android:label="@string/hitorial"
+        tools:layout="@layout/fragment_historial_pedido" />
+    <fragment
+        android:id="@+id/ventaFragment"
+        android:name="com.christhemar.minigonza_app.ui.PedidoFragments.VentaFragment"
+        android:label="@string/pago"
+        tools:layout="@layout/fragment_venta" >
+        <action
+            android:id="@+id/action_ventaFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

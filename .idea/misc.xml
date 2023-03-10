@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.373" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/drawable/anim_radio.xml" value="0.3865" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/drawable/button_boxshaw.xml" value="0.3865" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.3865" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/drawable/login_desing.xml" value="0.373" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/drawable/logo.xml" value="0.373" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/drawable/pager_item.xml" value="0.3865" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/drawable/pedido_radius.xml" value="0.3865" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/drawable/progreso_bar.xml" value="0.3865" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/drawable/side_nav_bar.xml" value="0.373" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/activity_login.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/activity_main.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/activity_register.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/activity_splsh.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/app_bar_main.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/content_main.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/dialog_checked.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/dialogo_layout.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/fragment_detalle_producto.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/fragment_envio.xml" value="0.33" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/fragment_historial_pedido.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/fragment_home.xml" value="0.31654676258992803" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/fragment_mapa.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/fragment_pago.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/fragment_pedido.xml" value="0.33" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/fragment_products_cat.xml" value="0.25067567567567567" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/fragment_slideshow.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/fragment_venta.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/image_pager.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/item_categoria.xml" value="0.5" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/item_detalle_pedido.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/item_historial.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/item_pedido.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/item_prod_cat.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/layout/nav_header_main.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/menu/activity_main_drawer.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/menu/main.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/CRHISTOPHER/Desktop/Proyecto mini-market/mobile/app/src/main/res/xml/network_security_config.xml" value="0.12881944444444443" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

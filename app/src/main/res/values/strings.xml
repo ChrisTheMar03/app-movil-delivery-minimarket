@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">minigonza-app</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Cerrar Sesion</string>
+
+    <string name="menu_home">Minimarket</string>
+    <string name="menu_pedido">Pedidos</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="productos">Productos</string>
+    <string name="nav_title_prodcat">Catalogo</string>
+    <string name="pedido">Pedidos</string>
+    <string name="envio_fragment">Envio</string>
+    <string name="mapa">Mapa</string>
+    <string name="compra">Compra</string>
+    <string name="hitorial">Historial</string>
+    <string name="historialname">Historial</string>
+    <string name="pago">Metodo de Pago</string>
+</resources>

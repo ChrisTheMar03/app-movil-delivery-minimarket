@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linea"
+    tools:context=".ui.PedidoFragments.HistorialPedidoFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/principal"
+        android:text="Historial de Pedidos"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:textSize="22sp"
+        android:gravity="bottom"
+        android:paddingStart="16dp"
+        android:paddingBottom="16dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_historial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/item_historial"
+        />
+
+    <TextView
+        android:id="@+id/not_have"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No tiene pedidos realizados"
+        android:gravity="center"
+
+        />
+
+
+</LinearLayout>

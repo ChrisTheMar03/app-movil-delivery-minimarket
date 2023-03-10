@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.PedidoFragments.PedidoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/principal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="center|start"
+                android:layout_marginHorizontal="24dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_outline_shopping_cart_24"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Todos mis productos"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="bottom|end"
+                    />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="87dp" />
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@id/guideline4"
+            android:background="@drawable/pedido_radius"
+            />-->
+
+        <!--<ProgressBar
+            android:id="@+id/progress_ped"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/tercero"
+            app:layout_constraintTop_toBottomOf="@id/guideline4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />-->
+
+        <LinearLayout
+            android:id="@+id/notpedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/guideline4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/car_red"
+                android:layout_gravity="center"
+                android:layout_marginTop="120dp"
+                />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="Aun no tiene productos en su carrito"
+                android:lines="2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ir_compra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ir a comprar"
+                android:textSize="12sp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/opcional"
+                />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvpedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="28dp"
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toBottomOf="@id/guideline4"
+            android:background="@drawable/pedido_radius"
+            tools:listitem="@layout/item_pedido"
+            tools:itemCount="3"
+            />
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/ped_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="1"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@id/rvpedido"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad Total"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-black"
+                    app:layout_constraintTop_toBottomOf="@id/ped_texttotal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/item"
+                    />
+
+                <TextView
+                    android:id="@+id/ped_cantidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textColor="@color/item"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/ped_total"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/ped_texttotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Precio Total"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:fontFamily="sans-serif-black"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/item"
+                    />
+
+                <TextView
+                    android:id="@+id/ped_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S/.0.0"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textSize="16sp"
+                    android:textColor="@color/item"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    />
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnseguircomprar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seguir Compra"
+                    app:layout_constraintTop_toBottomOf="@id/ped_cantidad"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="20dp"
+                    app:cornerRadius="4dp"
+                    android:textSize="12sp"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

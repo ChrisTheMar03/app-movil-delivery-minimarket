@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.PedidoFragments.PagoFragment">
+
+    <LinearLayout
+        android:id="@+id/pago_hubi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/pg_cliente_numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Cliente - 999999999"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textAllCaps="true"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/pg_hubicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hubicacion completa con referencia"
+                android:textAllCaps="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:layout_gravity="end|center_vertical"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/pg_distrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distrito Referencia"
+            android:textAllCaps="true"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewtp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/opcional"
+        app:layout_constraintTop_toBottomOf="@id/pago_hubi"
+        />
+
+    <TextView
+        android:id="@+id/pg_pedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/viewtp"
+        android:text="Productos del pedido"
+        android:fontFamily="sans-serif-black"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvpago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/pg_pedido"
+        />
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ped_Cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvpago"
+        android:layout_margin="16dp"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            >
+
+            <TextView
+                android:id="@+id/ped_name_cantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/ped_cantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/ped_name_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descuento"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/ped_name_cantidad"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/ped_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="% 0.0"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintTop_toBottomOf="@id/ped_cantidad"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/ped_name_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SubTotal"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/ped_name_desc"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/pg_subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="S/. 99.99"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/ped_desc"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!--<View
+        android:id="@+id/viewtp2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/opcional"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ped_Cardview"
+        />-->
+
+    <RadioButton
+        android:id="@+id/radio_pg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envio Rapido"
+        android:checked="true"
+        android:buttonTint="@color/principal"
+        app:layout_constraintTop_toBottomOf="@id/ped_Cardview"
+        android:enabled="false"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        />
+
+   <!-- <TextView
+        android:id="@+id/ped_txt_pago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_pg"
+        android:text="Metodo de Pago"
+        android:fontFamily="sans-serif-black"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/pg_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/ped_txt_pago"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pago_tarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#333"
+            android:text="Tarjeta"
+            android:layout_marginEnd="20dp"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_baseline_credit_card_24"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#333"
+            android:text="Yape"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            app:icon="@drawable/ic_baseline_attach_money_24"/>
+
+    </LinearLayout>-->
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pago_compra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar Pago"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
